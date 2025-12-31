@@ -1,1 +1,6 @@
-[build] # Upgrade pip/setuptools/wheel, install dependencies, then run Streamlit command = "python -m pip install --upgrade pip setuptools wheel && pip install -r requirements.txt && streamlit run app.py" # Folder to publish (Streamlit serves directly, so you can leave 'public' or adjust if needed) publish = "public"
+[build]
+  # Upgrade pip/setuptools/wheel, install dependencies, then run Streamlit
+  command = "python -m pip install --upgrade pip setuptools wheel && pip install -r requirements.txt && streamlit run app.py"
+
+  # Folder to publish (Streamlit serves directly, so you can leave 'public' or adjust if needed)
+  publish = "public"
